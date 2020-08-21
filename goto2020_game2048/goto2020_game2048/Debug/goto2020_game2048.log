@@ -1,0 +1,151 @@
+﻿  Camera.cpp
+  Color.cpp
+  Control.cpp
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\Control.cpp(78,27): warning C4244: '-=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\Control.cpp(80,27): warning C4244: '+=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\Control.cpp(91,24): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\Control.cpp(92,24): warning C4244: '=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\Control.cpp(96,27): warning C4244: '-=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\Control.cpp(99,27): warning C4244: '+=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\Control.cpp(102,27): warning C4244: '-=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\Control.cpp(105,27): warning C4244: '+=': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+  Control.events.cpp
+  DrawSystem.basics.cpp
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(53,40): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(53,28): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(54,40): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(54,33): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(55,67): warning C4244: 'argument': conversion from 'double' to 'sf::Uint8', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(55,58): warning C4244: 'argument': conversion from 'double' to 'sf::Uint8', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(55,49): warning C4244: 'argument': conversion from 'double' to 'sf::Uint8', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(55,40): warning C4244: 'argument': conversion from 'double' to 'sf::Uint8', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(56,27): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(56,24): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(62,40): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(62,28): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(63,40): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(63,33): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(64,70): warning C4244: 'argument': conversion from 'double' to 'sf::Uint8', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(64,61): warning C4244: 'argument': conversion from 'double' to 'sf::Uint8', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(64,52): warning C4244: 'argument': conversion from 'double' to 'sf::Uint8', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(64,43): warning C4244: 'argument': conversion from 'double' to 'sf::Uint8', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(67,27): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(67,24): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(73,22): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(73,19): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(74,19): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(75,64): warning C4244: 'argument': conversion from 'double' to 'sf::Uint8', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(75,55): warning C4244: 'argument': conversion from 'double' to 'sf::Uint8', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(75,46): warning C4244: 'argument': conversion from 'double' to 'sf::Uint8', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(75,37): warning C4244: 'argument': conversion from 'double' to 'sf::Uint8', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(76,24): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(76,21): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(83,30): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(83,27): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(84,31): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(84,27): warning C4244: 'argument': conversion from 'double' to 'T', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(86,70): warning C4244: 'argument': conversion from 'double' to 'sf::Uint8', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(86,61): warning C4244: 'argument': conversion from 'double' to 'sf::Uint8', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(86,52): warning C4244: 'argument': conversion from 'double' to 'sf::Uint8', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(86,43): warning C4244: 'argument': conversion from 'double' to 'sf::Uint8', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(95,56): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(95,35): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+          with
+          [
+              T=unsigned int
+          ]
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(97,32): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(97,23): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(98,24): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(98,21): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(100,33): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(113,67): warning C4244: 'argument': conversion from 'double' to 'sf::Uint8', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(113,58): warning C4244: 'argument': conversion from 'double' to 'sf::Uint8', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(113,49): warning C4244: 'argument': conversion from 'double' to 'sf::Uint8', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(113,40): warning C4244: 'argument': conversion from 'double' to 'sf::Uint8', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(116,27): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\DrawSystem.basics.cpp(116,24): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  DrawSystem.cpp
+  DrawSystem.loadTextures.cpp
+  Gamepad.cpp
+  geometry.cpp
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\geometry.cpp(81,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\geometry.cpp(92,20): warning C4018: '<': signed/unsigned mismatch
+  getMilliCount.cpp
+  main.cpp
+  Mouse.cpp
+  random.cpp
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\random.cpp(6,22): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  System.cpp
+  Vec2.cpp
+  Generating Code...
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\Gamepad.cpp(32): warning C4715: 'Gamepad::get': not all control paths return a value
+  goto2020_game2048.vcxproj -> C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\Debug\goto2020_game2048.exe
