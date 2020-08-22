@@ -6,7 +6,7 @@ public:
 	Vec2 pos;
 	Vec2 border;
 	double angle = 0;
-	double scale = 30;
+	double scale = 1;
 	double scaleVel = 2;
 	Camera();
 	Camera(Vec2 _pos, Vec2 _border, double _scale);

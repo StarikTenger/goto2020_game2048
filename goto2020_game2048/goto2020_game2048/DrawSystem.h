@@ -18,9 +18,6 @@ public:
 	double w, h;
 	double blockSize = 1;
 
-	sf::Vector3f camPos = { 0, 0, 0 };
-	sf::Vector2f camDir = { 0, 0 };
-
 	void draw();
 	void drawScene();
 	void drawInterface();
@@ -53,7 +50,7 @@ private:
 
 	// objects
 	
-	//load
+	// load
 	std::map<std::string, sf::Texture*> textures;
 	void loadTexture(std::string name, std::string path);
 	void loadTextures();

@@ -5,6 +5,7 @@
 #include <sstream>
 
 Control::Control() {
+	// Configuring keys
 	for (int i = 0; i < 100; i++) {
 		keyMatches.push_back({});
 	}
@@ -21,8 +22,6 @@ Control::Control() {
 
 		}
 	}
-
-	drawSys.cam.scale = 250;
 }
 
 Control::~Control() {
@@ -52,8 +51,22 @@ void Control::step() {
 		events();
 		drawSys.mouse = mouse;
 		
+		// Check keys
+		double gravityValue = 1;
+		Vec2 gravity; // initial value 0
+		if (keys[Commands::W])
+			gravity.y -= gravityValue;
+		if (keys[Commands::A])
+			gravity.x -= gravityValue;
+		if (keys[Commands::S])
+			gravity.y += gravityValue;
+		if (keys[Commands::D])
+			gravity.x += gravityValue;
+		
+		sys.set_gravity(gravity);
+
 		// System step
-		for (int i = 0; i < 1; i++) {
+		for (int i = 0; i < 10; i++) {
 			sys.step();
 		}
 		
