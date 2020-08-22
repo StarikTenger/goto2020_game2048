@@ -52,21 +52,24 @@ void Control::step() {
 		drawSys.mouse = mouse;
 		
 		// Check keys
-		double gravityValue = 1;
+		double gravityValue = sys.get_gravityValue();
 		Vec2 gravity; // initial value 0
-		if (keys[Commands::W])
-			gravity.y -= gravityValue;
-		if (keys[Commands::A])
-			gravity.x -= gravityValue;
-		if (keys[Commands::S])
-			gravity.y += gravityValue;
-		if (keys[Commands::D])
-			gravity.x += gravityValue;
+		if (keys[Commands::W]) {
+			sys.set_gravity(Vec2(0, -gravityValue));
+		}
+		if (keys[Commands::S]) {
+			sys.set_gravity(Vec2(0, gravityValue));
+		}
+		if (keys[Commands::A]) {
+			sys.set_gravity(Vec2(-gravityValue, 0));
+		}
+		if (keys[Commands::D]) {
+			sys.set_gravity(Vec2(gravityValue, 0));
+		}
 		
-		sys.set_gravity(gravity);
 
 		// System step
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 50; i++) {
 			sys.step();
 		}
 		

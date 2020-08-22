@@ -43,6 +43,12 @@ Vec2 geom::direction(Vec2 a, Vec2 b) {
 		return {};
 	return (a - b) / distance(a, b);
 }
+double geom::cross(Vec2 a, Vec2 b) {
+	return a.x * b.y - a.y * b.x;
+}
+double geom::dot(Vec2 a, Vec2 b) {
+	return a.x * b.x + a.y * b.y;
+}
 double geom::angle(Vec2 p) {
 	if (abs(p.x) < EPS && abs(p.y) < EPS) {
 		return 0;

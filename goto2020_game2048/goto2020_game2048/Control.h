@@ -31,7 +31,7 @@ public:
 
 
 	//time
-	int dt = 0;
+	int dt = 20;
 	int timePrev = 0;
 	bool stop = 0;
 	int iteration = 0;

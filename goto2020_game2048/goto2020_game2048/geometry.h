@@ -10,6 +10,8 @@ namespace geom {
 	Vec2 getCross(Vec2 a, Vec2 b, Vec2 c, Vec2 d);
 	Vec2 direction(double a);
 	Vec2 direction(Vec2  a, Vec2  b);
+	double cross(Vec2 a, Vec2 b);
+	double dot(Vec2 a, Vec2 b);
 	double angle(Vec2 p);
 	double angle(Vec2 a, Vec2 b, Vec2 c);
 	double distance(Vec2  a, Vec2 b);

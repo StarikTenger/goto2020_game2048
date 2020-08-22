@@ -133,6 +133,9 @@
     <None Include="keys.conf">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="textures.conf">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Font Include="font.ttf">
