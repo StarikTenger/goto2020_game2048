@@ -29,6 +29,9 @@ double System::get_cellSize() {
 Vec2 System::get_borders() {
 	return borders;
 }
+int System::get_score() {
+	return score;
+}
 
 void System::set_gravity(Vec2 g) {
 	gravity = g;
@@ -115,6 +118,12 @@ void System::step() {
 		bubble.move(bubble.get_vel() * dt);
 	}
 
+	// Friction
+	for (auto& bubble : bubbles) {
+		bubble.force(bubble.get_vel() * -dt * viscousFrictionK);
+	}
+
+
 	//// Grouping ////
 	for (auto& bubbleA : bubbles) {
 		for (auto& bubbleB : bubbles) {
@@ -132,6 +141,7 @@ void System::step() {
 				set_bubble((bubbleA.get_pos() + bubbleB.get_pos()) / 2, (bubbleA.get_vel() + bubbleB.get_vel()) / 2, bubbleA.get_value() + 1, bubbleA.get_type());
 				bubbleA.set_isAlive(0);
 				bubbleB.set_isAlive(0);
+				score += (int)pow(2, bubbleA.get_value());
 			}
 			else { // force
 				double k = -0.001;
@@ -144,14 +154,14 @@ void System::step() {
 	// Spawning
 	if (geom::distance(gravity, gravityPrev) > EPS && time - spawnLast > spawnPeriod) {
 		for (int i = 0; i < 10; i++) {
-			double r = initialRadius;
+			double r = initialRadius * cellSize / 2;
 			Vec2 pos = Vec2(
-				random::floatRandom(r, cellSize * cellNumber - r, 1),
-				random::floatRandom(r, cellSize * cellNumber - r, 1));
+				random::intRandom(r * 2, cellSize * cellNumber - r*2),
+				random::intRandom(r * 2, cellSize * cellNumber - r*2));
 			// Check for collision
 			int coll = 0;
 			for (auto& bubble : bubbles) {
-				if (geom::distance(bubble.get_pos(), pos) < r + bubble.get_radius()) {
+				if (geom::distance(bubble.get_pos(), pos) < r*1.1 + bubble.get_radius()) {
 					coll = 1;
 					break;
 				}

@@ -1,6 +1,12 @@
-﻿  Generating code
-  0 of 722 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+﻿  System.cpp
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\System.cpp(159,52): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\System.cpp(159,25): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\System.cpp(160,52): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\System.cpp(160,25): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\goto2020_game2048\System.cpp(180,20): warning C4018: '<': signed/unsigned mismatch
+  Generating code
+  1 of 738 functions ( 0.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+    2 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   goto2020_game2048.vcxproj -> C:\Users\ilyin\GitHub\goto2020_game2048\goto2020_game2048\Release\goto2020_game2048.exe

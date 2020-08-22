@@ -23,6 +23,8 @@ void DrawSystem::drawScene() {
 	w = window->getSize().x;
 	h = window->getSize().y;
 	
+	window->setTitle("Prep2048 | Score: " + std::to_string(sys.get_score()));
+
 	// Configuring camera
 	if (0) { // We don't use it in this project
 		cam.border = { w, h };
