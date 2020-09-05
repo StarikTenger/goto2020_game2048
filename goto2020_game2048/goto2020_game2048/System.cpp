@@ -18,6 +18,9 @@ System::~System() {}
 std::vector<Bubble> System::get_bubbles() {
 	return bubbles;
 }
+std::vector<Animation> System::get_animations() {
+	return animations;
+}
 
 double System::get_gravityValue() {
 	return gravityValue;
@@ -47,8 +50,13 @@ void System::set_bubble(Vec2 pos, Vec2 vel, int value, int type) {
 
 void System::add_all() {
 	// Add bubbles
-	for (auto& bubble : bubblesToAdd)
+	for (auto& bubble : bubblesToAdd) {
+		// Add
 		bubbles.push_back(bubble);
+		// Animation
+		animations.push_back(Animation(bubble.get_pos(), bubble.get_radius(), bubble.get_radius() * 2, 
+			bubble.get_value(), "circle", 0.1, &bubbles.back()));
+	}
 	// Clean bubblesToAdd
 	bubblesToAdd = {};
 }
@@ -137,11 +145,16 @@ void System::step() {
 				continue;
 			if (bubbleA.get_value() != bubbleB.get_value())
 				continue;
-			if (geom::distance(bubbleA.get_pos(), bubbleB.get_pos()) < 10) { // grouping
+			if (geom::distance(bubbleA.get_pos(), bubbleB.get_pos()) < 10) { // Grouping
+				// New bubble
 				set_bubble((bubbleA.get_pos() + bubbleB.get_pos()) / 2, (bubbleA.get_vel() + bubbleB.get_vel()) / 2, bubbleA.get_value() + 1, bubbleA.get_type());
+
+				// Prepare bubbles to be deleted
 				bubbleA.set_isAlive(0);
 				bubbleB.set_isAlive(0);
-				score += (int)pow(2, bubbleA.get_value());
+
+				// Change score
+				score += (int)pow(2, bubbleA.get_value());			
 			}
 			else { // force
 				double k = -0.001;
@@ -154,14 +167,14 @@ void System::step() {
 	// Spawning
 	if (geom::distance(gravity, gravityPrev) > EPS && time - spawnLast > spawnPeriod) {
 		for (int i = 0; i < 10; i++) {
-			double r = initialRadius * cellSize / 2;
+			double r = initialRadius * cellSize;
 			Vec2 pos = Vec2(
 				random::intRandom(r * 2, cellSize * cellNumber - r*2),
 				random::intRandom(r * 2, cellSize * cellNumber - r*2));
 			// Check for collision
 			int coll = 0;
 			for (auto& bubble : bubbles) {
-				if (geom::distance(bubble.get_pos(), pos) < r*1.1 + bubble.get_radius()) {
+				if (geom::distance(bubble.get_pos(), pos) < r + bubble.get_radius()) {
 					coll = 1;
 					break;
 				}
@@ -187,6 +200,22 @@ void System::step() {
 
 	// Adding newborn bubbles to bubbles array
 	add_all();
+
+	//// Manage animations ////
+
+	// Step
+	for (auto& animation : animations) {
+		animation.step(dt);
+	}
+
+	// Removing
+	for (int i = 0; i < animations.size(); i++) {
+		if (animations[i].get_timer() < 0) {
+			animations.erase(animations.begin() + i);
+			i--;
+			std::cout << i << "\n";
+		}
+	}
 
 	// Timer
 	time += dt;

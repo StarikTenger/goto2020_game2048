@@ -12,6 +12,11 @@
 DrawSystem::DrawSystem(){
 	window = new sf::RenderWindow(sf::VideoMode(600, 600), "Biba & Boba");
 	loadTextures();
+
+	// Icon
+	sf::Image icon;
+	icon.loadFromFile("textures/icon.png");
+	window->setIcon(icon.getSize().x, icon.getSize().y, icon.getPixelsPtr());
 }
 
 DrawSystem::~DrawSystem(){}
@@ -41,20 +46,22 @@ void DrawSystem::drawScene() {
 	//fillRect(0, 0, 10000, 10000, Color(128, 128, 128, 100)); // Temporary solution
 	image("background", w/2, h/2, w, h, 0, Color(255, 255, 255, 200));
 
-
-	// Getting object array
-	auto bubbles = sys.get_bubbles();
-
-	// Shadows
-	for (auto& bubble : bubbles) {
-		std::vector<Color> colors = {
+	// Bubble color hierarchy
+	std::vector<Color> colors = {
 			Color(95, 92, 255),
 			Color(84, 255, 93),
 			Color(229, 255, 84),
 			Color(255, 189, 84),
 			Color(255, 84, 84),
 			Color(255, 84, 232),
-		};
+	};
+
+	// Getting bubbles array
+	auto bubbles = sys.get_bubbles();
+
+	// Shadows
+	for (auto& bubble : bubbles) {
+		
 		auto col = colors[bubble.get_value() % colors.size()];
 
 
@@ -70,15 +77,8 @@ void DrawSystem::drawScene() {
 
 	}
 
+	// Draw bubbles
 	for (auto& bubble : bubbles) {
-		std::vector<Color> colors = {
-			Color(95, 92, 255),
-			Color(84, 255, 93),
-			Color(229, 255, 84),
-			Color(255, 189, 84),
-			Color(255, 84, 84),
-			Color(255, 84, 232),
-		};
 		auto col = colors[bubble.get_value() % colors.size()];
 		
 
@@ -120,6 +120,19 @@ void DrawSystem::drawScene() {
 		double scale_x = 1.0 - std::max(abs(bubble.get_velPrev().x - bubble.get_vel().x), 0.2) * 0.003;
 		double scale_y = 1.0 - std::max(abs(bubble.get_velPrev().y - bubble.get_vel().y), 0.2) * 0.003;
 		image(img, bubble.get_pos(), Vec2(bubble.get_radius() * scale_x, bubble.get_radius() * scale_y) * 2 * 0.9, 0, col);
+	}
+
+	//// Animations ////
+
+	// Getting animations array
+	auto animations = sys.get_animations();
+
+	// Draw animations
+	for (auto& animation : animations) {
+		auto size = animation.get_size() * 2;
+		auto col = colors[animation.get_val()];
+		col.a = animation.get_alpha() * 255;
+		image(animation.get_image(), animation.get_pos(), Vec2(size, size), 0, col);
 	}
 	
 }

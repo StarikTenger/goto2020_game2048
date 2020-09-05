@@ -148,6 +148,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Animation.h" />
     <ClInclude Include="Bubble.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Color.h" />
@@ -159,10 +160,12 @@
     <ClInclude Include="keys.h" />
     <ClInclude Include="Mouse.h" />
     <ClInclude Include="random.h" />
+    <ClInclude Include="resource.h" />
     <ClInclude Include="System.h" />
     <ClInclude Include="Vec2.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Animation.cpp" />
     <ClCompile Include="Bubble.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Color.cpp" />
@@ -186,6 +189,13 @@
   </ItemGroup>
   <ItemGroup>
     <Font Include="font.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="goto2020_game2048.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico" />
+    <Image Include="icon2.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
