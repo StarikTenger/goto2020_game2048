@@ -2,7 +2,7 @@
 Игра про складывание преподов гото
 
 Скачивать 
-[отсюда](https://github.com/StarikTenger/goto2020_game2048/raw/master/goto2020_game2048/prep2048_ready_to_run.zip)
+[отсюда](https://github.com/StarikTenger/goto2020_game2048/raw/master/goto2020_game2048/Prep2048.zip)
 
 
 Управление - **WASD**
