@@ -54,8 +54,12 @@ void System::add_all() {
 		// Add
 		bubbles.push_back(bubble);
 		// Animation
-		animations.push_back(Animation(bubble.get_pos(), bubble.get_radius(), bubble.get_radius() * 2, 
-			bubble.get_value(), "circle", 0.1, &bubbles.back()));
+		for (int i = 0; i < bubble.get_value(); i++) {
+			double k = pow(1.2, i);
+			animations.push_back(Animation(bubble.get_pos(), bubble.get_radius() * k, bubble.get_radius() * 2 * k,
+				bubble.get_value(), "circle", 0.2, &bubbles.back()));
+		}
+		
 	}
 	// Clean bubblesToAdd
 	bubblesToAdd = {};
@@ -131,6 +135,10 @@ void System::step() {
 		bubble.force(bubble.get_vel() * -dt * viscousFrictionK);
 	}
 
+	// Step
+	for (auto& bubble : bubbles) {
+		bubble.step(dt);
+	}
 
 	//// Grouping ////
 	for (auto& bubbleA : bubbles) {

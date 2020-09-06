@@ -10,6 +10,10 @@ Bubble::Bubble(Vec2 _pos, double _mass, double _r, int _value, int _type) {
 	type = _type;
 }
 
+void Bubble::step(double dt) {
+	time += dt;
+}
+
 Vec2 Bubble::get_pos() {
 	return pos;
 }
@@ -23,7 +27,14 @@ double Bubble::get_mass() {
 	return mass;
 }
 double Bubble::get_radius() {
-	return radius;
+	double r = radius;
+	double t = 0.05; // Grow time
+	if (time < t && value == 0)
+		r = radius * time / t;
+	return r;
+}
+double Bubble::get_time() {
+	return time;
 }
 int Bubble::get_value() {
 	return value;

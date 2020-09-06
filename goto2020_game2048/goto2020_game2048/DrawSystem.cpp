@@ -10,7 +10,7 @@
 
 
 DrawSystem::DrawSystem(){
-	window = new sf::RenderWindow(sf::VideoMode(600, 600), "Biba & Boba");
+	window = new sf::RenderWindow(sf::VideoMode(600, 600), "Biba & Boba", sf::Style::Close);
 	loadTextures();
 
 	// Icon

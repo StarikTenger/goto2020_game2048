@@ -7,6 +7,7 @@ class Bubble {
 	Vec2 velPrev; // Velocity prev
 	double mass = 0; // Mass
 	double radius = 1; // Radius
+	double time = 0; // Time from birth
 	int value = 0; // 2048-value
 	int type = 0; 
 	bool isAlive = 1;
@@ -14,12 +15,16 @@ class Bubble {
 public:
 	Bubble();
 	Bubble(Vec2 _pos, double _mass, double _r, int _value, int _type);
+
+	void step(double dt);
+
 	// Functions to interact with parameters
 	Vec2 get_pos();
 	Vec2 get_vel();
 	Vec2 get_velPrev();
 	double get_mass();
 	double get_radius();
+	double get_time();
 	int get_value();
 	bool get_isAlive();
 	int get_type();
